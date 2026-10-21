@@ -1,0 +1,19 @@
+<h2>Mer info om:
+  <%= @category["name"] %>
+</h2>
+<%= @category["description"] %>
+<ul>
+  <% @fruits.each do |fruit| %>
+    <li>
+      <a href="/fruits/<%= fruit["id"]%>">
+        <%= fruit["name"] %>
+      </a>
+      <form action="/fruits/<%=fruit["id"]%>/delete" method="post">
+        <input type="submit" value="Ta bort">
+      </form>
+      <form action="/fruits/<%=fruit["id"]%>/edit" method="get">
+        <input type="submit" value="ändra">
+      </form>
+    </li>
+  <% end %>
+</ul>

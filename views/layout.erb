@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruktparadiset</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="/img/affaren.jpg">
-        <h1 class="logo">Fruktparadiset</h1>
+      <img src="/img/affaren.jpg">
+      <h1 class="logo">Fruktparadiset</h1>
     </header>
     <hr>
     <nav>
-        <ul>
-            <li><a href="/fruits">Alla våra frukter</a></li>
-            <li><a href="/fruits/new">Ny frukt</a></li>
-        </ul>
+      <ul>
+        <li><a href="/fruits">Alla våra frukter</a></li>
+        <li><a href="/fruits/new">Ny frukt</a></li>
+        <li><a href="/categories">Kategorier</a></li>
+      </ul>
     </nav>
     <hr>
     <%= yield %>
     <hr>
     <footer>
-        <p>Kontakta oss</p>
+      <p>Kontakta oss</p>
     </footer>
-</body>
+  </body>
 </html>
